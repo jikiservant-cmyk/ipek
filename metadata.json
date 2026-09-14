@@ -1,0 +1,6 @@
+{
+  "name": "Skyways Junior School",
+  "description": "A modern school community dedicated to academic excellence, student life, and character development.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

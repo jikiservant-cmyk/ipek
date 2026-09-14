@@ -1,0 +1,193 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 243 22% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 243 22% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 243 22% 10%;
+    --primary: 243 22% 22%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 43 100% 50%;
+    --secondary-foreground: 243 22% 10%;
+    --muted: 243 10% 96%;
+    --muted-foreground: 243 15% 45%;
+    --accent: 43 100% 50%;
+    --accent-foreground: 243 22% 10%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 243 15% 90%;
+    --input: 243 15% 90%;
+    --ring: 43 100% 50%;
+    --radius: 0.5rem;
+    --font-headline: 'Montserrat', sans-serif;
+    --font-serif: 'Playfair Display', serif;
+    --font-body: 'Open Sans', sans-serif;
+  }
+}
+
+@theme {
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+  --font-headline: var(--font-headline);
+  --font-serif: var(--font-serif);
+  --font-body: var(--font-body);
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headline);
+  letter-spacing: -0.025em;
+}
+
+.font-headline {
+  font-family: var(--font-headline);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.slide-up {
+  opacity: 0;
+  animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes revealSlideRight {
+  from { transform: translateX(0); }
+  to { transform: translateX(100%); }
+}
+
+.reveal-mask-animation {
+  animation: revealSlideRight 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Kinetic Typography Animations */
+@keyframes kineticReveal {
+  from {
+    transform: translateY(105%) skewY(6deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) skewY(0);
+    opacity: 1;
+  }
+}
+
+.kinetic-animate {
+  animation: kineticReveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Ink Flow Animations */
+@keyframes inkFlow {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0% 0;
+    mask-position: 0% 0;
+  }
+}
+
+.ink-flow-mask {
+  -webkit-mask-image: linear-gradient(to right, black 40%, transparent 60%);
+  mask-image: linear-gradient(to right, black 40%, transparent 60%);
+  -webkit-mask-size: 250% 100%;
+  mask-size: 250% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: 100% 0;
+  mask-position: 100% 0;
+}
+
+.ink-flow-active {
+  animation: inkFlow 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Blur to Focus Animation */
+@keyframes blurFocus {
+  from {
+    filter: blur(20px);
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    filter: blur(0);
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.blur-focus-active {
+  animation: blurFocus 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.hero-overlay {
+  background: linear-gradient(to bottom, rgba(45, 43, 68, 0.7) 0%, rgba(45, 43, 68, 0.85) 100%);
+}
+
+@keyframes pulsate {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+.animate-pulsate {
+  animation: pulsate 1.5s ease-in-out infinite;
+}

@@ -1,0 +1,59 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "hero-church",
+      "description": "Our Vision - Building a better tomorrow",
+      "imageUrl": "/images/484688063_1181339383785349_6300749383438108902_n.jpg",
+      "imageHint": ""
+    },
+    {
+      "id": "live-stream",
+      "description": "Live sermon streaming view",
+      "imageUrl": "/images/486353896_1187679929817961_4724554373967953301_n.jpg",
+      "imageHint": ""
+    },
+    {
+      "id": "worship-band",
+      "description": "Church worship band performing",
+      "imageUrl": "/images/486460421_1187679879817966_8937100076930363422_n.jpg",
+      "imageHint": ""
+    },
+    {
+      "id": "community-gathering",
+      "description": "People gathered in a church community hall",
+      "imageUrl": "/images/486466805_1187679933151294_7895560268502234535_n.jpg",
+      "imageHint": ""
+    },
+    {
+      "id": "scripture-study",
+      "description": "Open Bible on a wooden table",
+      "imageUrl": "/images/486505257_1187679883151299_6568489799441534202_n.jpg",
+      "imageHint": ""
+    },
+    {
+      "id": "pastor-florence",
+      "description": "Mubiru Florence - Lead Pastor",
+      "imageUrl": "/images/486546213_1187673866485234_8327242758086334742_n.jpg",
+      "imageHint": ""
+    },
+    {
+      "id": "director-rose",
+      "description": "Kembabazi Rose - Community Director",
+      "imageUrl": "/images/492060854_1210449664207654_2349882474470258698_n.jpg",
+      "imageHint": ""
+    },
+    {
+      "id": "creative-geoffrey",
+      "description": "Sebalamu Geoffrey - Creative Arts",
+      "imageUrl": "/images/500844448_1240279234558030_4427405816133751754_n.jpg",
+      "imageHint": ""
+    },
+    {
+      "id": "about-history",
+      "description": "Church History - Journey so far",
+      "imageUrl": "/images/536273638_1310557530863533_3505997153391998666_n.jpg",
+      "imageHint": ""
+    }
+  ]
+}
