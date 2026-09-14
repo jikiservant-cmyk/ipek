@@ -29,14 +29,14 @@ export function Navbar() {
           <Link href="/" className="flex items-center group">
             <Image
               src="/images/Untitled (5).png"
-              alt="Skyways Junior School Logo"
+              alt="Ipek Kindergarten And Daycare Logo"
               width={50}
               height={50}
               className="group-hover:opacity-80 transition-opacity"
             />
             <div className="ml-4 flex flex-col items-start leading-tight">
-              <span className="font-headline font-bold text-base text-white uppercase">SKYWAYS</span>
-              <span className="font-headline font-medium text-[0.7rem] text-white/70 uppercase tracking-widest">JUNIOR SCHOOL</span>
+              <span className="font-headline font-bold text-base text-white uppercase tracking-wider">IPEK</span>
+              <span className="font-headline font-medium text-[0.65rem] text-white/80 uppercase tracking-widest">KINDERGARTEN & DAYCARE</span>
             </div>
           </Link>
 

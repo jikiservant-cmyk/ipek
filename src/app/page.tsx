@@ -34,7 +34,7 @@ export default function Home() {
           <div className="flex flex-col items-center text-white">
             <Image
               src="/images/Untitled (5).png"
-              alt="Skyways Junior School Logo"
+              alt="Ipek Kindergarten And Daycare Logo"
               width={100}
               height={100}
               className="mb-4 animate-pulsate"
@@ -46,8 +46,8 @@ export default function Home() {
             />
             
             <KineticHeadline 
-              lines={["SKYWAYS JUNIOR", "SCHOOL"]} 
-              className="text-6xl md:text-7xl lg:text-[8rem] font-[900] uppercase tracking-tighter leading-[0.75] font-headline"
+              lines={["IPEK KINDERGARTEN", "& DAYCARE"]} 
+              className="text-5xl md:text-7xl lg:text-[7.5rem] font-[900] uppercase tracking-tighter leading-[0.8] font-headline"
               staggerDelay={0.1}
             />
             
@@ -73,7 +73,7 @@ export default function Home() {
               className="text-[#2D2B44] text-4xl md:text-5xl font-black mb-8 uppercase leading-tight font-headline"
             />
             <InkFlowText className="text-muted-foreground text-lg mb-10 leading-relaxed font-body">
-              Skyways Junior School is a mixed day and boarding primary school in Nansana, Kampala. Our mission is to provide an enriching education that fosters academic excellence, creativity, and character development, igniting the hidden spark in every child.
+              Ipek Kindergarten And Daycare is a private pre-primary, daycare, and primary learning institution located in Nansana East Ward, Nansana Division, Wakiso District, Uganda. Our mission is to provide nurturing early childhood development, baby classes, and structured primary learning in a supportive and stimulating environment.
             </InkFlowText>
             <div className="h-1 w-20 bg-[#FFB800] mx-auto" />
           </div>
@@ -126,7 +126,7 @@ export default function Home() {
                 className="text-4xl md:text-6xl font-black uppercase font-headline leading-none text-[#2D2B44]"
               />
               <InkFlowText className="text-muted-foreground text-lg font-body leading-relaxed max-w-xl">
-                Since 1995, Skyways Junior School has been a cornerstone of the Nansana community, dedicated to providing a holistic and transformative education for generations of students.
+                Serving families in Nansana East Ward and across Wakiso District, Ipek Kindergarten And Daycare is dedicated to providing high-quality early childhood development, baby care, and foundational primary education with warmth and excellence.
               </InkFlowText>
               <MagneticButton>
                 <Link href="/about">

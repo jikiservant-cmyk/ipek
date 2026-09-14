@@ -71,7 +71,7 @@ export default function AboutPage() {
             
             <div className="space-y-8">
               <InkFlowText delay={0.8} className="text-xl md:text-2xl font-body leading-relaxed text-white/90">
-                At Skyways Junior School, we believe in holistic child development. Our focus is on nurturing the &quot;hidden spark&quot; in each child by emphasizing not just academic excellence, but also creativity, confidence, and character.
+                At Ipek Kindergarten And Daycare, we believe in holistic early child development and strong foundational education. Our focus is on nurturing each child&apos;s natural curiosity, confidence, creativity, and good character in a supportive, secure, and stimulating atmosphere.
               </InkFlowText>
             </div>
             
@@ -93,7 +93,7 @@ export default function AboutPage() {
               />
               <Separator className="bg-[#2D2B44]/10 w-32 h-[2px]" />
               <InkFlowText className="text-muted-foreground text-lg leading-relaxed font-body">
-                Founded in 1995, Skyways Junior School has grown from a small community initiative into a leading mixed day and boarding primary school in Nansana. Our journey is one of commitment to providing a holistic education for kindergarten and primary levels.
+                Ipek Kindergarten And Daycare is a recognized private pre-primary and primary learning institution situated in Nansana East Ward, Nansana Division, Wakiso District, Uganda. Officially listed in the UBOS educational dissemination portal, we offer baby classes, daycare, nursery, and structured primary education with dedicated teachers and caring staff.
               </InkFlowText>
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
@@ -118,7 +118,7 @@ export default function AboutPage() {
               className="text-4xl font-black uppercase font-headline text-[#2D2B44] mb-4"
             />
             <InkFlowText className="text-muted-foreground max-w-xl mx-auto">
-              Meet the dedicated educators and staff who make Skyways Junior School a special place to learn and grow.
+              Meet the dedicated educators and caregivers who make Ipek Kindergarten And Daycare a special and loving place to learn and grow.
             </InkFlowText>
           </div>
 

@@ -14,18 +14,18 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-16">
           <div className="space-y-8">
             <Link href="/" className="flex flex-col items-start group">
-              <span className="text-4xl font-black uppercase tracking-tighter leading-[0.8] text-white group-hover:text-[#FFB800] transition-colors">
-                SKYWAYS<br />JUNIOR SCHOOL
+              <span className="text-3xl lg:text-4xl font-black uppercase tracking-tighter leading-[0.85] text-white group-hover:text-[#FFB800] transition-colors">
+                IPEK<br />KINDERGARTEN<br /><span className="text-xl lg:text-2xl text-[#FFB800]">& DAYCARE</span>
               </span>
             </Link>
-            <p className="text-white/60 leading-relaxed font-body text-lg">
-              A mixed day & boarding school in Nansana, Kampala.
+            <p className="text-white/70 leading-relaxed font-body text-base">
+              A private pre-primary, daycare, and primary learning institution in Nansana East Ward, Wakiso District, Uganda.
             </p>
-            <div className="flex space-x-8">
-              <Link href="#" className="hover:text-[#FFB800] transition-all hover:scale-110"><Facebook className="h-6 w-6" /></Link>
-              <Link href="#" className="hover:text-[#FFB800] transition-all hover:scale-110"><Twitter className="h-6 w-6" /></Link>
-              <Link href="#" className="hover:text-[#FFB800] transition-all hover:scale-110"><Instagram className="h-6 w-6" /></Link>
-              <Link href="#" className="hover:text-[#FFB800] transition-all hover:scale-110"><Youtube className="h-6 w-6" /></Link>
+            <div className="flex space-x-6">
+              <a href="https://www.facebook.com/p/Ipek-Kindergarten-Nansana-100063761753701/" target="_blank" rel="noopener noreferrer" className="hover:text-[#FFB800] transition-all hover:scale-110" aria-label="Facebook Page"><Facebook className="h-6 w-6" /></a>
+              <Link href="#" className="hover:text-[#FFB800] transition-all hover:scale-110" aria-label="Twitter"><Twitter className="h-6 w-6" /></Link>
+              <Link href="#" className="hover:text-[#FFB800] transition-all hover:scale-110" aria-label="Instagram"><Instagram className="h-6 w-6" /></Link>
+              <Link href="#" className="hover:text-[#FFB800] transition-all hover:scale-110" aria-label="Youtube"><Youtube className="h-6 w-6" /></Link>
             </div>
           </div>
 
@@ -55,22 +55,22 @@ export function Footer() {
             <ul className="space-y-6">
               <li className="flex items-start space-x-4">
                 <MapPin className="h-6 w-6 text-[#FFB800] mt-1 shrink-0" />
-                <span className="text-white/60 text-lg">Nansana Town, behind Nansana Police Station, Kampala</span>
+                <span className="text-white/70 text-base">Nansana East Ward, Nansana Division, Wakiso District, Uganda</span>
               </li>
               <li className="flex items-center space-x-4">
                 <Phone className="h-6 w-6 text-[#FFB800] shrink-0" />
-                <span className="text-white/60 text-lg">0704571046 / 074814454</span>
+                <span className="text-white/70 text-base">+256 704 571 046 / +256 748 144 544</span>
               </li>
               <li className="flex items-center space-x-4">
                 <Mail className="h-6 w-6 text-[#FFB800] shrink-0" />
-                <span className="text-white/60 text-lg">hello@skywaysjuniorschool.org</span>
+                <span className="text-white/70 text-base">info@ipekkindergarten.org</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-24 pt-12 border-t border-white/5 text-center text-sm text-white/30 uppercase tracking-[0.2em]">
-          <p>© {year} Skyways Junior School. Built with purpose.</p>
+        <div className="mt-24 pt-12 border-t border-white/5 text-center text-sm text-white/40 uppercase tracking-[0.2em]">
+          <p>© {year} Ipek Kindergarten And Daycare. All rights reserved.</p>
         </div>
       </div>
     </footer>

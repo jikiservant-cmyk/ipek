@@ -11,48 +11,48 @@ import { cn } from "@/lib/utils"
 
 const academicPrograms = [
   {
-    title: "EARLY YEARS PROGRAM",
-    description: "Our Early Years program (Ages 3-5) focuses on play-based learning and social development in a safe, nurturing environment, building a strong foundation for future success.",
+    title: "DAYCARE & BABY CLASS",
+    description: "Our Daycare and Baby Class program (Ages 6 months - 2.5 years) provides loving care, sensory discovery, and motor skill development in a safe, hygienic, and supportive setting.",
     image: "/images/612005087_1418673150051970_3731473655120438810_n.jpg",
     bgColor: "bg-[#3E3E4E]",
     textColor: "text-white",
     btnClass: "bg-[#FFB800] text-[#3E3E4E] hover:bg-[#FFB800]/90"
   },
   {
-    title: "LOWER PRIMARY",
-    description: "In Lower Primary (Ages 6-8), we focus on core subjects like literacy and numeracy, fostering curiosity and critical thinking through interactive lessons and collaborative projects.",
+    title: "NURSERY & KINDERGARTEN",
+    description: "In our Pre-Primary Kindergarten (Middle & Top Class, Ages 3-5), children develop phonics, early numeracy, social skills, and creative confidence through interactive, guided play.",
     image: "/images/612502260_1418673063385312_5608933433895877060_n.jpg",
     bgColor: "bg-[#6A040F]",
     textColor: "text-white",
     btnClass: "border-[#FFB800] text-[#FFB800] hover:bg-[#FFB800] hover:text-[#6A040F]"
   },
   {
-    title: "UPPER PRIMARY",
-    description: "Our Upper Primary curriculum (Ages 9-12) challenges students with advanced topics, promoting leadership, independent research, and preparation for secondary education.",
+    title: "LOWER PRIMARY (P1 - P3)",
+    description: "Our Lower Primary curriculum establishes strong foundations in reading, writing, mathematics, science, and social studies in a structured and encouraging classroom environment.",
     image: "/images/612813247_1418673233385295_6130852871671298719_n.jpg",
     bgColor: "bg-[#3E3E4E]",
     textColor: "text-white",
     btnClass: "bg-[#FFB800] text-[#3E3E4E] hover:bg-[#FFB800]/90"
   },
   {
-    title: "ARTS & MUSIC",
-    description: "The Arts & Music program encourages creative expression through visual arts, drama, and music, allowing students to discover and develop their unique artistic talents.",
+    title: "UPPER PRIMARY (P4 - P7)",
+    description: "Upper Primary learners are guided through comprehensive syllabus mastery, critical thinking, leadership, and rigorous preparation for national primary school leaving assessments.",
     image: "/images/613165978_1418673280051957_8232470868673263088_n.jpg",
     bgColor: "bg-[#6A040F]",
     textColor: "text-white",
     btnClass: "border-[#FFB800] text-[#FFB800] hover:bg-[#FFB800] hover:text-[#6A040F]"
   },
   {
-    title: "ATHLETICS",
-    description: "Our athletics program promotes physical fitness, teamwork, and sportsmanship. We offer a variety of sports to encourage a healthy and active lifestyle.",
+    title: "CREATIVE ARTS & MUSIC",
+    description: "Every child explores self-expression through music, singing, visual crafts, and drama, nurturing imagination and cultural appreciation.",
     image: "/images/613176575_1418673436718608_3409238698708772371_n.jpg",
     bgColor: "bg-[#3E3E4E]",
     textColor: "text-white",
     btnClass: "bg-[#FFB800] text-[#3E3E4E] hover:bg-[#FFB800]/90"
   },
   {
-    title: "TECHNOLOGY & CODING",
-    description: "We equip students for the digital age with programs in coding, robotics, and digital literacy, fostering problem-solving skills and innovation.",
+    title: "SPORTS & PHYSICAL DEVELOPMENT",
+    description: "Active physical play, structured athletics, and teamwork activities ensure healthy motor growth, discipline, and joyful peer collaboration.",
     image: "/images/621786925_1433194978599787_4334043272897827589_n.jpg",
     bgColor: "bg-[#6A040F]",
     textColor: "text-white",

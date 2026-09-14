@@ -28,8 +28,8 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Skyways Junior School | A Foundation for the Future',
-  description: 'A modern school community dedicated to academic excellence and character development.',
+  title: 'Ipek Kindergarten And Daycare | Nansana, Wakiso',
+  description: 'A private pre-primary, daycare, and primary learning institution located in Nansana East Ward, Nansana Division, Wakiso District, Uganda.',
 };
 
 export default function RootLayout({

@@ -59,7 +59,7 @@ export default function GalleryPage() {
                   />
                 </div>
                 <InkFlowText className="text-muted-foreground text-xl font-body max-w-2xl mx-auto leading-relaxed">
-                  A glimpse into the vibrant life at Skyways Junior School, capturing the memories we make.
+                  A glimpse into the vibrant learning, playful daycare moments, and school activities at Ipek Kindergarten And Daycare in Nansana East.
                 </InkFlowText>
             </div>
 

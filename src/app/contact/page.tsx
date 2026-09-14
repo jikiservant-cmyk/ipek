@@ -59,7 +59,7 @@ export default function ContactPage() {
               className="text-4xl md:text-5xl font-black text-[#2D2B44] uppercase font-headline"
             />
             <InkFlowText className="text-muted-foreground text-xl font-body max-w-2xl mx-auto leading-relaxed">
-              Admissions are open for both kindergarten and primary levels. Have a question, or need more information about our programs? Reach out and let us know how we can help.
+              Admissions are open for Daycare, Nursery/Kindergarten (Baby, Middle, Top Class), and Primary levels. Contact us to schedule a campus tour or enroll your child.
             </InkFlowText>
           </div>
 
@@ -75,7 +75,7 @@ export default function ContactPage() {
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-lg font-bold text-[#2D2B44] uppercase tracking-wide">Location</h3>
-                    <p className="text-muted-foreground font-body">Nansana Town, behind Nansana Police Station, Kampala</p>
+                    <p className="text-muted-foreground font-body">Nansana East Ward, Nansana Division, Wakiso District, Uganda</p>
                   </div>
                 </div>
 
@@ -85,7 +85,7 @@ export default function ContactPage() {
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-lg font-bold text-[#2D2B44] uppercase tracking-wide">Phone</h3>
-                    <p className="text-muted-foreground font-body">0704571046 / 074814454</p>
+                    <p className="text-muted-foreground font-body">+256 704 571 046 / +256 748 144 544</p>
                   </div>
                 </div>
 
@@ -95,17 +95,27 @@ export default function ContactPage() {
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-lg font-bold text-[#2D2B44] uppercase tracking-wide">Email</h3>
-                    <p className="text-muted-foreground font-body">hello@skywaysjuniorschool.org</p>
+                    <p className="text-muted-foreground font-body">info@ipekkindergarten.org</p>
                   </div>
                 </div>
               </div>
 
               <div className="p-10 bg-[#3E3E4E] text-white space-y-6 rounded-sm shadow-xl">
                 <Users className="h-10 w-10 text-[#FFB800]" />
-                <h3 className="text-2xl font-black uppercase font-headline">Admissions Office</h3>
-                <InkFlowText delay={1} className="text-white/70 font-body leading-relaxed text-sm">
-                  Our admissions team is available to guide you through the application process and answer any questions you may have. Admissions are currently open!
+                <h3 className="text-2xl font-black uppercase font-headline">Admissions & Verification</h3>
+                <InkFlowText delay={1} className="text-white/80 font-body leading-relaxed text-sm">
+                  Ipek Kindergarten And Daycare is officially registered as a private educational institution listed on the Uganda Bureau of Statistics (UBOS) portal and SchoolsArena. Admissions are currently open!
                 </InkFlowText>
+                <div className="pt-2">
+                  <a
+                    href="https://www.facebook.com/p/Ipek-Kindergarten-Nansana-100063761753701/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#FFB800] hover:underline font-bold text-xs uppercase tracking-wider block"
+                  >
+                    View Facebook Updates →
+                  </a>
+                </div>
               </div>
             </div>
 
