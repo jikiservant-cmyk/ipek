@@ -18,41 +18,44 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full relative">
       {/* Hero Section with Mobile-Compatible Parallax */}
-      <section className="relative h-screen w-full overflow-hidden flex items-center justify-center bg-[#2D2B44]">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none" style={{ clipPath: 'inset(0)' }}>
+      <section className="relative min-h-screen w-full overflow-hidden flex items-center justify-center bg-[#2D2B44] py-20">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div 
-            className="fixed inset-0 w-full h-full bg-center bg-cover -z-10"
+            className="absolute inset-0 w-full h-full bg-center bg-cover"
             style={{
               backgroundImage: `url(${heroImg?.imageUrl || "/images/486466805_1187679933151294_7895560268502234535_n.jpg"})`,
-              filter: 'brightness(0.7)'
             }}
           />
-          <div className="absolute inset-0 bg-black/30" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#2D2B44]/80 via-[#2D2B44]/70 to-[#2D2B44]/90" />
         </div>
         
         <div className="container mx-auto px-6 relative z-10 flex justify-center text-center">
-          <div className="flex flex-col items-center text-white">
+          <div className="flex flex-col items-center text-white max-w-5xl">
             <Image
               src="/images/Untitled (5).png"
               alt="Ipek Kindergarten And Daycare Logo"
-              width={100}
-              height={100}
-              className="mb-4 animate-pulsate"
+              width={110}
+              height={110}
+              className="mb-6 animate-pulsate drop-shadow-xl"
             />
             <KineticHeadline 
               lines={["WELCOME TO"]} 
-              className="text-lg md:text-2xl font-bold uppercase tracking-[0.4em] mb-12 font-headline"
+              className="text-base sm:text-xl md:text-2xl font-bold uppercase tracking-[0.35em] mb-4 md:mb-6 text-[#FFB800] font-headline"
               staggerDelay={0}
             />
             
             <KineticHeadline 
               lines={["IPEK KINDERGARTEN", "& DAYCARE"]} 
-              className="text-5xl md:text-7xl lg:text-[7.5rem] font-[900] uppercase tracking-tighter leading-[0.8] font-headline"
+              className="text-4xl sm:text-6xl md:text-7xl lg:text-[6.5rem] font-[900] uppercase tracking-tight leading-[0.95] text-white font-headline"
               staggerDelay={0.1}
             />
             
-            <div className="w-24 h-3 bg-white mt-12 mb-8" />
-            <ChevronDown className="h-10 w-10 animate-bounce opacity-60" strokeWidth={1.5} />
+            <p className="mt-6 text-sm sm:text-base md:text-lg text-white/90 max-w-2xl font-body font-medium tracking-wide">
+              Pre-Primary, Daycare & Primary Learning in Nansana East, Wakiso District
+            </p>
+
+            <div className="w-24 h-1.5 bg-[#FFB800] mt-8 mb-6 rounded-full" />
+            <ChevronDown className="h-8 w-8 animate-bounce text-[#FFB800] opacity-80" strokeWidth={2} />
           </div>
         </div>
       </section>

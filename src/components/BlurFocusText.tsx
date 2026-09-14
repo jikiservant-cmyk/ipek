@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from '@/lib/utils';
+import { motion } from 'motion/react';
 
 interface BlurFocusTextProps {
   children: React.ReactNode;
@@ -14,34 +15,37 @@ export function BlurFocusText({ children, className, delay = 0 }: BlurFocusTextP
   const elementRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.unobserve(entry.target);
-        }
-      },
-      { threshold: 0.1 }
-    );
+    const timer = setTimeout(() => setIsVisible(true), 60);
 
-    if (elementRef.current) {
+    if (typeof IntersectionObserver !== 'undefined' && elementRef.current) {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            observer.unobserve(entry.target);
+          }
+        },
+        { threshold: 0.05 }
+      );
       observer.observe(elementRef.current);
+      return () => {
+        clearTimeout(timer);
+        observer.disconnect();
+      };
     }
-
-    return () => observer.disconnect();
+    return () => clearTimeout(timer);
   }, []);
 
   return (
-    <div
+    <motion.div
       ref={elementRef}
-      className={cn(
-        'opacity-0 blur-xl scale-95 transition-all duration-1000',
-        isVisible && 'blur-focus-active opacity-100',
-        className
-      )}
-      style={{ animationDelay: `${delay}s` }}
+      initial={{ opacity: 0, scale: 0.96 }}
+      animate={isVisible ? { opacity: 1, scale: 1 } : { opacity: 1, scale: 1 }}
+      transition={{ duration: 0.8, delay, ease: [0.16, 1, 0.3, 1] }}
+      className={className}
     >
       {children}
-    </div>
+    </motion.div>
   );
 }
+
